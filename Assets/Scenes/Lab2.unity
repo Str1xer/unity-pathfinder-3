@@ -295,6 +295,7 @@ MonoBehaviour:
   neighbors:
   - targetAreaIndex: 1
     link: {fileID: 671815623}
+    reverseDirection: 0
 --- !u!1 &73900770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,6 +1124,7 @@ MonoBehaviour:
   neighbors:
   - targetAreaIndex: 1
     link: {fileID: 1433083850}
+    reverseDirection: 1
 --- !u!1 &1726351676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,8 +1322,10 @@ MonoBehaviour:
   neighbors:
   - targetAreaIndex: 0
     link: {fileID: 671815623}
+    reverseDirection: 1
   - targetAreaIndex: 2
     link: {fileID: 1433083850}
+    reverseDirection: 0
 --- !u!1 &1799834349 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3094588044405721428, guid: f0524eb56c0c1f84ab790724087173ed, type: 3}

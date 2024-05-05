@@ -11,8 +11,13 @@ public struct AreaInfo
 {
     public int targetAreaIndex;
     public NavMeshLink link;
-    public readonly Vector3 From => link.transform.position + link.startPoint;
-    public readonly Vector3 To => link.transform.position + link.endPoint;
+    public bool reverseDirection;
+    public readonly Vector3 From => link.transform.position + (
+        reverseDirection ? link.endPoint : link.startPoint
+    );
+    public readonly Vector3 To => link.transform.position + (
+        reverseDirection ? link.startPoint : link.endPoint
+    );
 }
 
 public class NavArea : MonoBehaviour
